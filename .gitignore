@@ -1,0 +1,11 @@
+env
+.env
+venv
+.venv
+.cache
+__pycache__
+.pyc
+.terraform
+.terraform.lock.hcl
+terraform.tfstate
+terraform.tfstate.backup
