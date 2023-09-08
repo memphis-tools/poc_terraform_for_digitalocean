@@ -3,7 +3,7 @@
 ## What is it ?
 Just a basic dummy POC for a Terraform usage when creating a Linux Droplet* on [Digital Ocean](https://www.digitalocean.com/).
 
-A Debian droplet will be created, then Nginx installed on it.
+A Debian-12 "droplet" will be created, then docker and docker-compose will be installed.
 
 All should be quite understandable.
 
@@ -55,6 +55,10 @@ Run the following command to execute the Terraform's plan.
 `terraform apply -var "do_token=${DO_PAT}" -var "pvt_key=Your_local_private_ssh_key_path"`
 
 `Enter a value: yes`
+
+Run the following command to display the Terraform's plan states.
+
+`terraform show terraform.tfstate`
 
 Run the following command to destroy the Terraform's plan set (destroy the droplet).
 
